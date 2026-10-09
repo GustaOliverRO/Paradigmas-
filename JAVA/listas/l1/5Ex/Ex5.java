@@ -5,10 +5,12 @@ public class Ex5
     public static void main (String [] args)
     {
         Scanner input = new Scanner(System.in);
-        
+
+		    System.out.println("Digite o input!");
+		        
         int x = input.nextInt();
         int resultado = 0;
-
+				
         System.out.print("f(x) = ");
         if (0 <= x && x <5)
             resultado = x;
