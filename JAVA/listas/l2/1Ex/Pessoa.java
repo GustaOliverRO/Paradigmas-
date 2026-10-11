@@ -29,7 +29,7 @@ public class Pessoa
 			this.idade = idade;
 	}
 	
-	public void setDia(int dia)
+/*	public void setDia(int dia)
 	{
 		if(this.mes != 2)
 			if(0 < this.mes && this.mes < 8)
@@ -62,11 +62,32 @@ public class Pessoa
 		if(0 < ano)
 			this.ano = ano;
 	}
-	
+	*/
 	// Outros metodos
 	
-	public void ajustarDataDeNascimento()	
+	public void ajustarDataDeNascimento(int diaDeNasc, int mesDeNasc, int anoDeNasc)
+	{
+		this.dia = diaDeNasc;
+		this.mes = mesDeNasc;
+		this.ano = anoDeNasc;
+	}
  	
+ 	public String retornarNome(){return this.nome;}
+ 	
+ 	public int retornarIdade(){return this.idade;}
+ 	
+ 	public void calcularIdade(int diaAtual, int mesAtual, int anoAtual)
+ 	{
+ 		int idade = anoAtual - this.ano;
+
+ 		if(mesAtual < this.mes){idade--;}
+ 		else if(mesAtual == this.mes)
+ 			{
+ 				if(diaAtual < this.dia){idade--;}
+ 			}
+ 			
+ 		this.idade = idade;
+  	}
 
 
 }
