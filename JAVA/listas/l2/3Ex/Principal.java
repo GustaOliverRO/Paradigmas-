@@ -3,29 +3,20 @@ public class Principal
 	public static void main(String [] args)
 	{
 		int cont = 0;
-		Pessoa [] vet = new Pessoa[2];
+		Data dataAdaLovelace = new Data();
+		Data dataGraceHopper = new Data();
 		
-		vet[0] = new Pessoa();
-		vet[1] = new Pessoa();
-		
-		// Instanciando a Grace Hopper
-		vet[0].ajustarDataDeNascimento(9,10,1906);
-		vet[0].setNome("Grace Hopper");
-		vet[0].retornarNome();
-		vet[0].getDataNasc.imprimirData();
 		
 		// Instanciando a Ada Lovelace
-		vet[1].ajustarDataDeNascimento(10,10,1815);
-		vet[1].setNome("Ada Lovelace");
-		vet[1].retornarNome();
-		vet[1].getDataNasc.imprimirData();	
-/*		
-		while(cont < 2)
-		{
-			// Imprimindo os dados
-			System.out.printf("A idade de %s hoje eh %d.\n", vet[cont].retornarNome(), vet[cont].retornarIdade());
-			cont++;
-		}
-*/				 
+		dataAdaLovelace.ajustarData(9,12,1906);
+		
+		// Instanciando a Grace Hopper
+		dataGraceHopper.ajustarData(10,	12,1815);
+		
+		// Imprimindo os dados
+		System.out.print("A data de nascimento de Ada Lovelace:\n");
+		dataAdaLovelace.imprimirData();
+		System.out.print("A data de nascimento de Grace Hopper:\n");
+		dataGraceHopper.imprimirData();
 	}
 }

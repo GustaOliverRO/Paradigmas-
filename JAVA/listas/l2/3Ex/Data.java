@@ -6,6 +6,8 @@ public class Data
 	private int mes;
 	private int ano;
 	
+	public Data(){}
+	/*
 	// Metodos
 	
 	public int getDia()
@@ -28,7 +30,7 @@ public class Data
 	{
 		return this.bissexto
 	}
-	*/
+	
 	// Corrigir para anos bisextos;
 	public void setDia(int dia)
 	{
@@ -48,7 +50,7 @@ public class Data
 	{
 		this.bissexto = bissexto;
 	}
-	*/
+	
 	public void setMes(int mes)
 	{
 		if(0 < mes && mes < 13)
@@ -61,11 +63,11 @@ public class Data
 			this.ano = ano;
 	}
 	
-	/*public void exibirDados()
+	public void exibirDados()
 	{
 		System.out.println(this.dia + "/" + this.mes + "/" + this.ano);		
-	}*/
-
+	}
+	*/
 	public void ajustarData(int dia, int mes, int ano)
 	{
 		this.dia = dia;
@@ -73,8 +75,8 @@ public class Data
 		this.ano = ano;
 	}
 	
-	public void imprimirData();
+	public void imprimirData()
 	{
-		System.out.printf("%d/%d/%d", this.dia, this.mes, this.ano);
+		System.out.printf("%d/%d/%d\n", this.dia, this.mes, this.ano);
 	}
 }

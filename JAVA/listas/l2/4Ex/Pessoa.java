@@ -4,25 +4,29 @@ public class Pessoa
  	private String nome;
  	private int idade;
 	private Data dataNasc;
+	
  	// Construtor
- 	public Pessoa(){}
+ 	public Pessoa(){this.dataNasc = new Data();}
  	
  	// Metodos get e set
  	public String getNome() {return this.nome;}
+ 	public void setNome (String nome){this.nome = nome;}
  	
+ 	/*
  	public int getIdade(){return this.idade;}
  	
 	public Data getDataNasc(){return.dataNasc;}
 	
-	public void setNome (String nome){this.nome = nome;}
+	
 	
 	public void setIdade(int idade)
 	{
 		if(idade > 0)
 			this.idade = idade;
 	}
-	
-/*	public void setDia(int dia)
+	*/
+	/*
+	public void setDia(int dia)
 	{
 		if(this.mes != 2)
 			if(0 < this.mes && this.mes < 8)
@@ -58,26 +62,26 @@ public class Pessoa
 	*/
 	// Outros metodos
 	
-	/*public void ajustarDataDeNascimento(int diaDeNasc, int mesDeNasc, int anoDeNasc)
-	{
-		this.dia = diaDeNasc;
-		this.mes = mesDeNasc;
-		this.ano = anoDeNasc;
-	}
-
  	
  	public String retornarNome(){return this.nome;}
  	
  	public int retornarIdade(){return this.idade;}
  	
+ 	public void ajustarData(int dia, int mes, int ano)
+ 	{
+ 		this.dataNasc.ajustarData(dia, mes, ano);
+ 	}
+ 	
+ 	public void imprimirData(){this.dataNasc.imprimirData();}
+ 	
  	public void calcularIdade(int diaAtual, int mesAtual, int anoAtual)
  	{
- 		int idade = anoAtual - dataNasc.get;
+ 		int idade = anoAtual - dataNasc.getAno();
 
- 		if(mesAtual < this.mes){idade--;}
- 		else if(mesAtual == this.mes)
+ 		if(mesAtual < dataNasc.getMes()){idade--;}
+ 		else if(mesAtual == dataNasc.getMes())
  			{
- 				if(diaAtual < this.dia){idade--;}
+ 				if(diaAtual < dataNasc.getDia()){idade--;}
  			}
  			
  		this.idade = idade;
