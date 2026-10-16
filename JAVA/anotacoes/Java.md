@@ -130,3 +130,43 @@ o tipo dos elementos do array e o número de elementos.
 
 ## Encapsulamento
 
+## Construtores
+
+## Herança
+> De forma geral, a herança é uma forma de modularizar e propor 
+uma reutilização de código de maneira a não gerar uma repetição, 
+muitas vezes de atributos, por classes que possuem uma 
+semelhança entre si. Exemplo as classes Veiculo, Carro, Moto;
+
+> Inicia o conceito de superclasse e subclasse, sendo 
+superclasses (pai), aquela que será herdada, subclasse (filho), 
+aquela que herda informações da superclasse. De forma geral, 
+toda moto e carro (subclasses) são um veículo (superclases), mas 
+nem todos os veículos são motos e carros...
+
+> Uma **subclasse** herda atributos e métodos de sua superclasse 
+e os utiliza como se fossem declarados dentro da prórpia classe.
+
+### Como implementar Herança
+1. Usar a palavra **extends** nas subclasses, seguida do nome da 
+superclasse ao lado;
+2. Decalarar os atributos da superclasses como **protected**;
+OBS: Membros de protected só pode ser acessados por membros da 
+própria classe, por subclasses;
+
+### Tipos de Herança 
+> Herança Simples: uma classe é derivada de uma única 
+superclasses;
+> Herança Múltipla: uma classes é derivdada de mais de uma 
+superclassse;
+OBS: Java não possuiu hernaça kililpa
+
+### Quando utilizar ?
+-> Usar a pergunta "É um ?"
+> Todas as classes são subclasses da classe Object
+- equals(Object obj): compara dois objetos e retorna se são 
+iguais ou diferentens;
+
+### Construtores - Herança
+
+
