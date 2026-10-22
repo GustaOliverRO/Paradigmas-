@@ -131,15 +131,32 @@ o tipo dos elementos do array e o número de elementos.
 ## Encapsulamento
 
 ## Construtores
-> De forma geral, contrutores é uma das várias subpartes da classe, como os métodos a exemplo. O construtor possui algumas peculiariedades como não ter tipo de retorno e ter o nome como o nome da classe do mesmo, sendo sua principal função instanciar os atributos em tempo de "criação", podendo ser com valores default ou com valores já específicos. Uma característica interessante é que uma classe pode ter mais de um contrutor, todos com o mesmo nome, entretanto, são distinguidos pelo compilador do java pelos seus argumentos. 
+> De forma geral, contrutores é uma das várias subpartes da 
+classe, como os métodos a exemplo. O construtor possui algumas 
+peculiariedades como não ter tipo de retorno e ter o nome como o 
+nome da classe do mesmo, sendo sua principal função instanciar os
+atributos em tempo de "criação", podendo ser com valores default 
+ou com valores já específicos. Uma característica interessante é 
+que uma classe pode ter mais de um contrutor, todos com o mesmo 
+nome, entretanto, são distinguidos pelo compilador do java pelos 
+seus argumentos. 
 
 
 ## Atributo tipos Classe
-> Aqui o foco é quando nossos objetos começam a ficar complexos ao ponto de não tem somente atributos trivias, com tipos "bases", mas começam a tem atributos que detenham de mais informações, a exemplo de uma Data, que é uma classe, e por sua vez terá atributos bases, construtores, métodos e etc. 
+> Aqui o foco é quando nossos objetos começam a ficar complexos 
+ao ponto de não ter somente atributos trivias, com tipos 
+"bases", mas começam a ter atributos que detenham de mais 
+informações, a exemplo de uma Data, que é uma classe, e por sua 
+vez terá atributos bases, construtores, métodos e etc. 
 
-> Um ponto importante é como será feita essa associação, sempre será uma associação forte, entretanto, uma Classe A pode conter como atributo uma ou mais atributos da Classe B, isto é importante para a parte de representação no diagrama UML. 
+> Um ponto importante é como será feita essa associação, sempre 
+será uma associação forte, entretanto, uma Classe A pode conter 
+como atributo uma ou mais atributos da Classe B, isto é 
+importante para a parte de representação no diagrama UML. 
 
-> Para manusear esse atributo tipo classe dentro da classe que o detem será usado o auxílio do this. e dos métodos get/set do classe que está tendo a função de atributo.
+> Para manusear esse atributo tipo classe dentro da classe que o 
+detem será usado o auxílio do 'this.' e dos métodos 'get/set' da 
+classe que está tendo a função de atributo.
 
 ## Herança
 > De forma geral, a herança é uma forma de modularizar e propor 
@@ -171,14 +188,35 @@ superclassse;
 OBS: Java não possuiu hernaça kililpa
 
 ### Quando utilizar ?
--> Usar a pergunta "É um ?"
+> Usar a pergunta "É um ?"
 > Todas as classes são subclasses da classe Object
 - equals(Object obj): compara dois objetos e retorna se são 
 iguais ou diferentens;
+- hashCode(): retorna um código hash (int) para o objeto;
+
+OBS: Nem todo relacionamento é de herança, de forma geral pode
+levar o condeito de "É um" -> sim, mas em caso de 
+"Tem um" -> não;
 
 ### Construtores - Herança
----
-- Completar o conteúdo de Herança e revisar tudo. 
+> Construtores de uma superclasse não são herdados pela 
+subclasse, mas é possível "utilizá-lo" desde que use o 'super',
+para instanciar o atributos herdados no construtor da subclasse.
+
+### Métodos - Herança
+> Pode ocorrer sobreposição de métodos da parte da subclasse com 
+a superclasse, causando uma forma de "sobrecarga". Para isso, os
+parametro, nome e o tipo de retorno precisam ser iguais e o nível
+de acesso não pode ser mais seguro do que o da superclasse.
+> Ou pode ser usada pela subclasse, desde que seja usado o 
+'super' para fazer tal acesso do método da superclasse.
+> Uso do '@Override';
+
+### Classe Final ou Método Final
+> Em ambos os casos, a ideia será de proibir e restringir tanto
+a herança de uma classe por outra ou de proibir que um método 
+seja sobrescrito "alterado". Assim restringindo um pouco da 
+manipulação dos dados
 
 ## Sobrecarga
 
