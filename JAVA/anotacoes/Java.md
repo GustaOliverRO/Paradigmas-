@@ -131,6 +131,15 @@ o tipo dos elementos do array e o número de elementos.
 ## Encapsulamento
 
 ## Construtores
+> De forma geral, contrutores é uma das várias subpartes da classe, como os métodos a exemplo. O construtor possui algumas peculiariedades como não ter tipo de retorno e ter o nome como o nome da classe do mesmo, sendo sua principal função instanciar os atributos em tempo de "criação", podendo ser com valores default ou com valores já específicos. Uma característica interessante é que uma classe pode ter mais de um contrutor, todos com o mesmo nome, entretanto, são distinguidos pelo compilador do java pelos seus argumentos. 
+
+
+## Atributo tipos Classe
+> Aqui o foco é quando nossos objetos começam a ficar complexos ao ponto de não tem somente atributos trivias, com tipos "bases", mas começam a tem atributos que detenham de mais informações, a exemplo de uma Data, que é uma classe, e por sua vez terá atributos bases, construtores, métodos e etc. 
+
+> Um ponto importante é como será feita essa associação, sempre será uma associação forte, entretanto, uma Classe A pode conter como atributo uma ou mais atributos da Classe B, isto é importante para a parte de representação no diagrama UML. 
+
+> Para manusear esse atributo tipo classe dentro da classe que o detem será usado o auxílio do this. e dos métodos get/set do classe que está tendo a função de atributo.
 
 ## Herança
 > De forma geral, a herança é uma forma de modularizar e propor 
@@ -170,3 +179,6 @@ iguais ou diferentens;
 ### Construtores - Herança
 
 
+
+>
+>>>>>>> 7ebdfcd (Anot de Contrutores e Atrib.CLASSE)
