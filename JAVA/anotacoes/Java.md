@@ -220,4 +220,38 @@ manipulação dos dados
 
 ## Sobrecarga
 
->
+> De alta generalização sobrecarga é quando temos um contrutor ou
+método que pode ser instanciado de diferente maneira, 
+diferenciado normalmente somente nas assinaturas dos parâmetros.
+
+> Nesse tipo de caso, é muito comum o uso do 'this.' para 
+acarretar no reuso de código, um dos objetivos do JAVA.
+-> O this. será usado para invocar algo já implementado, de forma
+que seja possível reutilizar o código.
+
+> **Sobrecarga de Construtor e de Métodos**, são os mais comuns.
+
+## Classe Abstrata
+Esse conceito é o intermediário entre classe e interface. Aqui,
+pode raciocinar no conceito de herança para auxiliar. Haverá
+implementações de superclasses, onde um método pode se distinguir
+dado qual subclasse que herde. Dessa forma, será somente
+nestes casos declarados o "cabeçalho" do método e a implementação
+do mesmo será de responsabilidade do método que herde da 
+superclasse.
+-> Por ter métodos não implementados, uma das características de 
+classes abstratas é que não pode ser instanciadas.
+-> A primeira classe concreta que extend (herda) uma classe 
+abstrata, deve implementar os métodos abstratos da superclasses.
+
+## Interface
+De forma geral, pode ser entendida como uma "classe" que detém 
+somente métodos abstratos, nesse caso, será denominada de 
+interface e será declarada como 'interface'.
+Pode se compreender como um arquivo que somente terá as 
+declarações dos métodos que será assumido por uma outra classe
+por meio de "implements".
+
+## Polimorfismo
+
+
